@@ -36,7 +36,26 @@ export function Diagnostic() {
         style={{ background: "radial-gradient(circle, #17565a 0%, transparent 70%)" }}
       />
 
-      <Container className="relative">
+      {/* Retrato editorial, dissolvido no fundo — presença, não ilustração. */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-y-0 right-0 hidden w-[46%] md:block"
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/moises-sombra.jpg"
+          alt=""
+          className="h-full w-full object-cover opacity-[0.55]"
+          style={{
+            objectPosition: "72% 30%",
+            maskImage: "linear-gradient(122deg, transparent 8%, black 46%, black 78%, transparent 99%)",
+            WebkitMaskImage:
+              "linear-gradient(122deg, transparent 8%, black 46%, black 78%, transparent 99%)",
+          }}
+        />
+      </div>
+
+      <Container className="relative z-10">
         <div className="mx-auto max-w-3xl text-center">
           <Reveal>
             <p className="eyebrow text-gold-light">Diagnóstico Profissional</p>

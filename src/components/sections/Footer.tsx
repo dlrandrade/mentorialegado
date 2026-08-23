@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
-import { Mark } from "@/components/ui/Mark";
+import { MonoMark } from "@/components/ui/Mark";
 import { site } from "@/lib/site";
 
 export function Footer() {
@@ -16,7 +16,7 @@ export function Footer() {
     <footer className="bg-petrol-deep text-ivory">
       <Container className="py-16 md:py-20">
         <div className="flex flex-col items-center text-center">
-          <Mark className="h-12 w-12 text-gold-light" />
+          <MonoMark className="h-12 w-12 text-gold-light" />
 
           <p className="display mx-auto mt-9 max-w-2xl text-[1.375rem] leading-snug md:text-[1.75rem]">
             {site.signature}

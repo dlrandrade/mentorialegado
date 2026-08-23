@@ -1,13 +1,13 @@
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
-import { Mark } from "@/components/ui/Mark";
+import { MonoMark } from "@/components/ui/Mark";
 
 export function MentoriaIntro() {
   return (
     <section id="a-mentoria" className="py-24 md:py-32">
       <Container width="narrow">
         <Reveal className="flex flex-col items-center text-center">
-          <Mark className="h-12 w-12 text-gold" />
+          <MonoMark className="h-12 w-12 text-gold" />
           <p className="eyebrow mt-7 text-gold">A Mentoria</p>
         </Reveal>
 

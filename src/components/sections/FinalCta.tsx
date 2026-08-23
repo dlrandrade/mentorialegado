@@ -1,7 +1,7 @@
 import { Container } from "@/components/ui/Container";
 import { Cta, CtaMicro } from "@/components/ui/Cta";
 import { Reveal } from "@/components/ui/Reveal";
-import { Mark } from "@/components/ui/Mark";
+import { MonoMark } from "@/components/ui/Mark";
 import { CTA_SHORT } from "@/lib/site";
 
 export function FinalCta() {
@@ -9,7 +9,7 @@ export function FinalCta() {
     <section className="grain relative overflow-hidden border-t border-petrol/10 bg-ivory-deep py-24 md:py-32">
       <Container width="narrow" className="relative text-center">
         <Reveal className="flex justify-center">
-          <Mark className="h-11 w-11 text-gold" />
+          <MonoMark className="h-11 w-11 text-gold" />
         </Reveal>
 
         <Reveal delay={90}>

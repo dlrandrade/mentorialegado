@@ -88,9 +88,8 @@ Psicologia. Ao editar textos, preservar:
 
 ## Pendências antes de publicar
 
-- [ ] Subir as fotografias em `public/images/` (ver `public/images/README.md`)
-- [ ] Substituir `public/brand/marca-legado.svg` e `src/app/icon.svg` pela marca
-      oficial, caso a atual seja provisória
+- [x] Fotografias reais em `public/images/` e marca oficial em `public/brand/`
+      e `src/app/icon.png` — feito a partir do material enviado
 - [ ] Preencher `links.instagram` e `links.contactEmail` em `src/lib/site.ts`
       (enquanto vazios, os links simplesmente não aparecem no rodapé)
 - [ ] Confirmar `site.url` com o domínio definitivo (afeta SEO, sitemap e Open Graph)

@@ -3,7 +3,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { useState } from "react";
-import { Mark } from "./Mark";
+import { MonoMark } from "./Mark";
 
 /**
  * Fotografia com degradação elegante.
@@ -20,6 +20,7 @@ export function Photo({
   priority = false,
   className = "",
   tone = "sand",
+  focal = "50% 22%",
 }: {
   src: string;
   alt: string;
@@ -27,6 +28,8 @@ export function Photo({
   priority?: boolean;
   className?: string;
   tone?: "sand" | "petrol";
+  /** object-position — a maioria dos retratos ganha com um enquadramento levemente voltado para cima. */
+  focal?: string;
 }) {
   const [failed, setFailed] = useState(false);
 
@@ -56,7 +59,7 @@ export function Photo({
           role="img"
           aria-label={alt}
         >
-          <Mark className="h-10 w-10 opacity-45" />
+          <MonoMark className="h-10 w-10 opacity-45" />
           {process.env.NODE_ENV !== "production" ? (
             <span className="eyebrow px-6 text-center text-[0.5rem] opacity-50">
               {src.replace("/images/", "")}
@@ -73,6 +76,7 @@ export function Photo({
           decoding="async"
           fetchPriority={priority ? "high" : "auto"}
           className="h-full w-full object-cover"
+          style={{ objectPosition: focal }}
         />
       )}
     </div>
