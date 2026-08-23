@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+/* ============================================================
+   MENTORIA LEGADO — Design tokens
+   Paleta: marfim / branco / verde petróleo / grafite / dourado
+   ============================================================ */
+
+@theme {
+  /* Superfícies */
+  --color-ivory: #f6f3ed;
+  --color-ivory-deep: #efeae1;
+  --color-paper: #ffffff;
+
+  /* Institucional — verde petróleo profundo */
+  --color-petrol: #0d3b3e;
+  --color-petrol-deep: #072a2d;
+  --color-petrol-soft: #17565a;
+
+  /* Texto */
+  --color-graphite: #14171a;
+  --color-graphite-soft: #3f474d;
+  --color-graphite-mute: #6b757c;
+
+  /* Detalhes */
+  --color-gold: #a98a55;
+  --color-gold-light: #c4a674;
+  --color-sand: #e2dacc;
+
+  /* Tipografia */
+  --font-display: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  /* Ritmo */
+  --spacing-section: 7.5rem;
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    :root {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    background-color: var(--color-ivory);
+    color: var(--color-graphite);
+    font-family: var(--font-sans);
+    font-feature-settings: "kern", "liga", "calt";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: var(--color-petrol);
+    color: var(--color-ivory);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+}
+
+@layer components {
+  /* --- Título de display, refinado e sem exagero de serifa --- */
+  .display {
+    font-family: var(--font-display);
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: -0.015em;
+  }
+
+  .display-italic {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  /* --- Eyebrow / rótulo de seção --- */
+  .eyebrow {
+    font-family: var(--font-sans);
+    font-size: 0.6875rem;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+
+  /* --- Régua fina dourada --- */
+  .rule-gold {
+    display: block;
+    width: 2.75rem;
+    height: 1px;
+    background-color: var(--color-gold);
+  }
+
+  /* --- Texto corrido de leitura confortável --- */
+  .prose-lead {
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    color: var(--color-graphite-soft);
+  }
+
+  @media (min-width: 768px) {
+    .prose-lead {
+      font-size: 1.125rem;
+      line-height: 1.8;
+    }
+  }
+}
+
+/* ============================================================
+   Revelação em scroll — discreta, com respeito a reduced-motion
+   ============================================================ */
+
+@layer utilities {
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition:
+      opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+    transition-delay: var(--reveal-delay, 0ms);
+    will-change: opacity, transform;
+  }
+
+  .reveal[data-visible="true"] {
+    opacity: 1;
+    transform: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+
+  /* Textura sutil de papel para blocos marfim */
+  .grain::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.035;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+}
