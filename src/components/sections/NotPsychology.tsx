@@ -20,7 +20,26 @@ export function NotPsychology() {
         style={{ background: "radial-gradient(circle, #17565a 0%, transparent 70%)" }}
       />
 
-      <Container className="relative">
+      {/* Retrato editorial, confinado ao topo para nunca disputar leitura com a citação abaixo. */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute top-0 right-0 hidden h-[30rem] w-[38%] md:block md:h-[34rem]"
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/moises-consultorio.jpg"
+          alt=""
+          className="h-full w-full object-cover opacity-[0.5]"
+          style={{
+            objectPosition: "50% 15%",
+            maskImage: "linear-gradient(115deg, transparent 6%, black 45%, black 78%, transparent 98%)",
+            WebkitMaskImage:
+              "linear-gradient(115deg, transparent 6%, black 45%, black 78%, transparent 98%)",
+          }}
+        />
+      </div>
+
+      <Container className="relative z-10">
         <div className="max-w-3xl">
           <Reveal>
             <p className="eyebrow text-gold-light">O problema não é a Psicologia</p>

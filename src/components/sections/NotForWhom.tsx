@@ -12,7 +12,25 @@ const NAO_E_PARA = [
 export function NotForWhom() {
   return (
     <section className="grain relative overflow-hidden bg-graphite py-24 text-ivory md:py-32">
-      <Container width="narrow" className="relative">
+      {/* Retrato editorial na margem — a coluna estreita do conteúdo deixa a lateral livre. */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-y-0 right-0 hidden w-[26rem] lg:block"
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/moises-perfil.jpg"
+          alt=""
+          className="h-full w-full object-cover opacity-[0.45]"
+          style={{
+            objectPosition: "50% 20%",
+            maskImage: "linear-gradient(to left, black 30%, transparent 95%)",
+            WebkitMaskImage: "linear-gradient(to left, black 30%, transparent 95%)",
+          }}
+        />
+      </div>
+
+      <Container width="narrow" className="relative z-10">
         <Reveal>
           <p className="eyebrow text-gold-light">Para quem não é</p>
           <span className="rule-gold mt-5" />
