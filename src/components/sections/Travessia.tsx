@@ -6,55 +6,32 @@ const ETAPAS = [
   {
     numero: "01",
     nome: "Diagnosticar",
-    resumo: "Entender exatamente onde sua carreira está hoje.",
-    itens: [
-      "Agenda",
-      "Faturamento",
-      "Ticket médio",
-      "Público",
-      "Formação",
-      "Posicionamento",
-      "Captação",
-      "Ambiente profissional",
-    ],
+    descricao:
+      "Entender exatamente onde sua carreira está hoje. Agenda, faturamento, ticket médio, público, formação, posicionamento e captação são analisados antes de qualquer plano — sem diagnóstico, não existe estratégia, só palpite.",
   },
   {
     numero: "02",
     nome: "Planejar",
-    resumo: "Transformar o diagnóstico em um plano concreto.",
-    itens: [
-      "Prioridades",
-      "Metas",
-      "Precificação",
-      "Estrutura",
-      "Migração de público",
-      "Organização da agenda",
-    ],
+    descricao:
+      "Transformar o diagnóstico em um plano concreto: prioridades, metas e precificação organizadas em uma sequência clara, com a estrutura e a agenda reorganizadas para sustentar o que vem a seguir.",
   },
   {
     numero: "03",
     nome: "Posicionar",
-    resumo: "Construir percepção de valor.",
-    itens: [
-      "Bio",
-      "Imagem profissional",
-      "Comunicação",
-      "Conteúdo",
-      "Autoridade",
-      "Relacionamento",
-    ],
+    descricao:
+      "Construir a percepção de valor que sustenta novos honorários. Bio, imagem profissional, comunicação e conteúdo passam a refletir a autoridade que a sua trajetória já construiu.",
   },
   {
     numero: "04",
     nome: "Implementar",
-    resumo: "Fazer a estratégia sair do papel.",
-    itens: ["Conversão", "Execução", "Correção", "Prospecção", "Ajustes", "Disciplina"],
+    descricao:
+      "Fazer a estratégia sair do papel. Conversão, execução e prospecção entram em movimento, com os ajustes finos que só a prática revela — e a disciplina para sustentar o que foi decidido.",
   },
   {
     numero: "05",
     nome: "Sustentar",
-    resumo: "Construir crescimento que continue depois da Mentoria.",
-    itens: ["Indicadores", "Aquisição", "Novos serviços", "Autoridade", "Equipe", "Escala"],
+    descricao:
+      "Construir o crescimento que continua depois da Mentoria: indicadores, novos serviços e a estrutura — inclusive de equipe — que permitem escalar sem depender só da sua agenda.",
   },
 ];
 
@@ -109,17 +86,9 @@ export function Travessia() {
                 <h3 className="display mt-4 text-[1.625rem] leading-none tracking-wide lg:mt-3">
                   {etapa.nome}
                 </h3>
-                <p className="mt-3 text-[0.9375rem] leading-relaxed text-sand/75 lg:min-h-[3.25rem]">
-                  {etapa.resumo}
+                <p className="mt-4 text-[0.9375rem] leading-relaxed text-sand/75">
+                  {etapa.descricao}
                 </p>
-
-                <ul className="mt-5 space-y-1.5 border-t border-ivory/12 pt-5">
-                  {etapa.itens.map((item) => (
-                    <li key={item} className="text-[0.8125rem] text-sand/60">
-                      {item}
-                    </li>
-                  ))}
-                </ul>
               </Reveal>
             ))}
           </ol>

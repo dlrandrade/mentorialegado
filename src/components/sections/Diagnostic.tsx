@@ -8,7 +8,7 @@ const PASSOS = [
     numero: "01",
     titulo: "Você responde ao diagnóstico",
     texto:
-      "Algumas perguntas sobre carreira, posicionamento, agenda, faturamento e estrutura profissional. Leva cerca de quatro minutos.",
+      "Algumas perguntas sobre carreira, posicionamento, agenda, faturamento e estrutura profissional.",
   },
   {
     numero: "02",
@@ -64,9 +64,9 @@ export function Diagnostic() {
 
           <Reveal delay={80}>
             <h2 className="display mt-7 text-[2rem] leading-[1.12] sm:text-[2.5rem] md:text-[3rem]">
-              Talvez você ainda não precise decidir se a Mentoria é para você.{" "}
+              Essa Mentoria é para você{" "}
               <span className="display-italic text-gold-light">
-                Primeiro precisamos entender onde você está.
+                e o primeiro passo é preencher sua aplicação.
               </span>
             </h2>
           </Reveal>

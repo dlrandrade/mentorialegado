@@ -35,6 +35,7 @@ npm run lint
 | Ordem das seções                              | `src/app/page.tsx`                         |
 | Cada seção                                    | `src/components/sections/`                 |
 | Fotografias                                   | `public/images/` (ver README de lá)        |
+| Vídeo                                          | `public/videos/` (ver README de lá)        |
 
 ### Paleta
 
@@ -52,24 +53,25 @@ Usam-se como utilitários do Tailwind: `bg-petrol`, `text-sand/80`, `border-gold
 
 ## Estrutura da página
 
+O cabeçalho não tem menu nem CTA — de propósito. Não há atalho: quem chega é
+conduzido a rolar a página inteira antes de qualquer chamada para ação.
+
 1. Hero — promessa, retrato e primeiro CTA
-2. Um método construído a partir da prática
+2. Um método construído a partir da prática (+ vídeo de apresentação)
 3. Identificação com a dor
 4. O problema não é a Psicologia
 5. O futuro desejado
-6. A história e a origem da Travessia
-7. Autoridade — Einstein, Harvard, clínica, ensino
-8. Apresentação da Mentoria
-9. Método TRAVESSIA em cinco etapas
-10. O que está incluído
-11. Estratégia individual, não fórmula pronta
-12. Para quem é
-13. Para quem não é
-14. Provas e trajetória
-15. Construindo a meta de R$ 30 mil
-16. Diagnóstico Profissional
-17. Perguntas frequentes
-18. CTA final + rodapé
+6. Autoridade — Einstein, Harvard, clínica, ensino
+7. Apresentação da Mentoria + Como funciona (entregáveis, com ícones)
+8. Método TRAVESSIA em cinco etapas
+9. Estratégia individual, não fórmula pronta
+10. Para quem é
+11. Para quem não é
+12. Provas e trajetória
+13. Construindo a meta de R$ 30 mil
+14. Diagnóstico Profissional
+15. Perguntas frequentes
+16. CTA final + rodapé
 
 ## Conformidade ética (CFP)
 
@@ -90,6 +92,9 @@ Psicologia. Ao editar textos, preservar:
 
 - [x] Fotografias reais em `public/images/` e marca oficial em `public/brand/`
       e `src/app/icon.png` — feito a partir do material enviado
+- [ ] Subir o vídeo de apresentação em `public/videos/apresentacao.mp4` (ver
+      README de lá) — enquanto não existir, a seção mostra um player com botão
+      de play desabilitado, sem quebrar o layout
 - [ ] Preencher `links.instagram` e `links.contactEmail` em `src/lib/site.ts`
       (enquanto vazios, os links simplesmente não aparecem no rodapé)
 - [ ] Confirmar `site.url` com o domínio definitivo (afeta SEO, sitemap e Open Graph)

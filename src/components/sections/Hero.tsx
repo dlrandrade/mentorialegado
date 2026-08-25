@@ -28,12 +28,11 @@ export function Hero() {
             </Reveal>
 
             <Reveal delay={90}>
-              <h1 className="display mt-8 text-[2.4rem] leading-[1.06] text-graphite sm:text-[3.1rem] md:text-[3.75rem]">
-                Construa uma carreira mais valorizada, organizada e{" "}
-                <span className="display-italic text-petrol">
-                  financeiramente sustentável
-                </span>{" "}
-                na Psicologia.
+              <h1 className="display mt-8 text-[2rem] leading-[1.14] text-graphite sm:text-[2.625rem] md:text-[3.125rem]">
+                Como crescer financeiramente na Psicologia{" "}
+                <span className="display-italic text-petrol">fazendo seu tempo valer mais</span>,
+                mesmo que hoje sua agenda seja formada principalmente por atendimentos de valor
+                financeiro mais baixo.
               </h1>
             </Reveal>
 
@@ -48,7 +47,7 @@ export function Hero() {
             <Reveal delay={260}>
               <div className="mt-10 flex flex-col items-start gap-4">
                 <Cta label={CTA_PRIMARY} />
-                <CtaMicro text="Leva aproximadamente 4 minutos. Sem custo." className="pl-1" />
+                <CtaMicro text="Sem custo." className="pl-1" />
               </div>
             </Reveal>
 

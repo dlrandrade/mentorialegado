@@ -1,16 +1,6 @@
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 
-const LACUNAS = [
-  "Posicionamento",
-  "Percepção de valor",
-  "Precificação",
-  "Captação",
-  "Rentabilidade",
-  "Indicadores",
-  "Crescimento",
-];
-
 export function NotPsychology() {
   return (
     <section className="grain relative overflow-hidden bg-petrol-deep py-24 text-ivory md:py-32">
@@ -53,39 +43,24 @@ export function NotPsychology() {
           </Reveal>
         </div>
 
-        <div className="mt-14 grid gap-12 md:grid-cols-2 md:gap-20">
-          <div className="space-y-6">
-            <Reveal>
-              <p className="prose-lead text-sand/80">
-                O problema de muitos psicólogos não está na competência clínica. Está na ausência
-                de uma estratégia de carreira.
-              </p>
-            </Reveal>
-            <Reveal delay={90}>
-              <p className="prose-lead text-sand/80">
-                Eles sabem atender. Mas nunca aprenderam a organizar aquilo que sustenta uma
-                carreira do lado de fora do consultório.
-              </p>
-            </Reveal>
-            <Reveal delay={180}>
-              <p className="prose-lead text-sand/80">
-                E acabam tentando resolver o problema financeiro colocando mais pacientes dentro
-                de uma agenda que já está cheia.
-              </p>
-            </Reveal>
-          </div>
-
-          <Reveal delay={140}>
-            <ul className="grid gap-px overflow-hidden border border-ivory/12 bg-ivory/12 sm:grid-cols-2">
-              {LACUNAS.map((item) => (
-                <li
-                  key={item}
-                  className="bg-petrol-deep px-5 py-4 text-[0.9375rem] text-sand/90 last:sm:col-span-2"
-                >
-                  {item}
-                </li>
-              ))}
-            </ul>
+        <div className="mt-14 max-w-2xl space-y-6">
+          <Reveal>
+            <p className="prose-lead text-sand/80">
+              O problema de muitos psicólogos não está na competência clínica. Está na ausência
+              de uma estratégia de carreira.
+            </p>
+          </Reveal>
+          <Reveal delay={90}>
+            <p className="prose-lead text-sand/80">
+              Eles sabem atender. Mas nunca aprenderam a organizar aquilo que sustenta uma
+              carreira do lado de fora do consultório.
+            </p>
+          </Reveal>
+          <Reveal delay={180}>
+            <p className="prose-lead text-sand/80">
+              E acabam tentando resolver o problema financeiro colocando mais pacientes dentro
+              de uma agenda que já está cheia.
+            </p>
           </Reveal>
         </div>
 
@@ -95,7 +70,8 @@ export function NotPsychology() {
             <p className="display text-[1.75rem] leading-[1.25] sm:text-[2.25rem] md:text-[2.75rem]">
               Você não precisa necessariamente de mais horas de trabalho. Precisa fazer com que
               cada hora da sua carreira{" "}
-              <span className="display-italic text-gold-light">tenha mais valor</span>.
+              <span className="display-italic text-gold-light">tenha mais valor</span>. E é isso
+              que o Método TRAVESSIA te ajuda a fazer.
             </p>
           </blockquote>
         </Reveal>

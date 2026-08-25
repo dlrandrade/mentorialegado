@@ -44,7 +44,7 @@ const GALERIA = [
 
 export function Authority() {
   return (
-    <section className="bg-paper py-24 md:py-32">
+    <section className="py-24 md:py-32">
       <Container width="wide">
         <SectionHeading
           eyebrow="Trajetória"

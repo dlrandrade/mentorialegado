@@ -21,7 +21,6 @@ export const site = {
 
   /** Isca de topo de funil — todo CTA da página aponta para cá. */
   diagnosticUrl: "https://diagnostico.legadopsi.com.br",
-  diagnosticMinutes: 4,
 
   /**
    * Deixe como string vazia para o link simplesmente não aparecer no rodapé.
@@ -38,4 +37,4 @@ export const site = {
 
 export const CTA_PRIMARY = "Quero fazer meu diagnóstico profissional";
 export const CTA_SHORT = "Fazer meu diagnóstico profissional";
-export const CTA_MICRO = "Gratuito · Aproximadamente 4 minutos";
+export const CTA_MICRO = "Gratuito";

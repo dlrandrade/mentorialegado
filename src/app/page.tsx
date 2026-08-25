@@ -4,11 +4,9 @@ import { Disciplines } from "@/components/sections/Disciplines";
 import { Identification } from "@/components/sections/Identification";
 import { NotPsychology } from "@/components/sections/NotPsychology";
 import { Transformation } from "@/components/sections/Transformation";
-import { Story } from "@/components/sections/Story";
 import { Authority } from "@/components/sections/Authority";
 import { MentoriaIntro } from "@/components/sections/MentoriaIntro";
 import { Travessia } from "@/components/sections/Travessia";
-import { Included } from "@/components/sections/Included";
 import { NotAFormula } from "@/components/sections/NotAFormula";
 import { ForWhom } from "@/components/sections/ForWhom";
 import { NotForWhom } from "@/components/sections/NotForWhom";
@@ -45,31 +43,27 @@ export default function Home() {
         <NotPsychology />
         {/* 5 — O futuro desejado */}
         <Transformation />
-        {/* 6 — A história e a origem da Travessia */}
-        <Story />
-        {/* 7 — Autoridade: Einstein, Harvard, clínica, ensino */}
+        {/* 6 — Autoridade: Einstein, Harvard, clínica, ensino */}
         <Authority />
-        {/* 8 — Apresentação da Mentoria */}
+        {/* 7 — Apresentação da Mentoria + Como funciona (entregáveis) */}
         <MentoriaIntro />
-        {/* 9 — Método TRAVESSIA em cinco etapas */}
+        {/* 8 — Método TRAVESSIA em cinco etapas */}
         <Travessia />
-        {/* 10 — O que está incluído */}
-        <Included />
-        {/* 11 — Estratégia individual, não fórmula pronta */}
+        {/* 9 — Estratégia individual, não fórmula pronta */}
         <NotAFormula />
-        {/* 12 — Para quem é */}
+        {/* 10 — Para quem é */}
         <ForWhom />
-        {/* 13 — Para quem não é */}
+        {/* 11 — Para quem não é */}
         <NotForWhom />
-        {/* 14 — Provas e trajetória */}
+        {/* 12 — Provas e trajetória */}
         <Proof />
-        {/* 15 — Construindo a meta de R$ 30 mil */}
+        {/* 13 — Construindo a meta de R$ 30 mil */}
         <ThirtyK />
-        {/* 16 — Diagnóstico Profissional gratuito */}
+        {/* 14 — Diagnóstico Profissional gratuito */}
         <Diagnostic />
-        {/* 17 — Perguntas frequentes */}
+        {/* 15 — Perguntas frequentes */}
         <Faq />
-        {/* 18 — CTA final */}
+        {/* 16 — CTA final */}
         <FinalCta />
       </main>
       <Footer />
